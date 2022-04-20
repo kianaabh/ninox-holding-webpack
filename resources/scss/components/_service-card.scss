@@ -1,0 +1,24 @@
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.money-bag {
+    height: 5rem;
+    width: 7rem;
+}
+
+.services {
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: -5rem;
+
+    &__name {
+        color: #3159ff;
+    }
+}

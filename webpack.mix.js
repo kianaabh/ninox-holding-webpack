@@ -11,7 +11,7 @@ const mix = require("laravel-mix");
  |
  */
 
-mix.sass("resources/scss/main.scss", "assets/css/styles.css")
+mix.sass("resources/scss/main.scss", "css/styles.css")
     .browserSync({
         watch: true,
         server: "public",

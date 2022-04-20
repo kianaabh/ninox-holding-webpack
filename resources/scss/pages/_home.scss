@@ -1,0 +1,42 @@
+.home {
+    &__primary-content {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        strong {
+            font-size: 6rem;
+        }
+
+        span {
+            font-size: 3.5rem;
+        }
+    }
+    &__text {
+        color: $text-home;
+        margin-top: 1.5rem;
+        font-size: 0.7rem;
+    }
+
+    &__primary-picture img {
+        width: 40%;
+        position: absolute;
+        top: -5rem;
+        right: -5rem;
+    }
+
+    &__secondary-picture img {
+        width: 40%;
+        position: absolute;
+        top: 0;
+        left: -4rem;
+    }
+
+    &__secondary-content {
+        height: 100vh;
+        position: relative;
+        span {
+            font-size: 3rem;
+        }
+    }
+}
