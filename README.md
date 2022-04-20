@@ -1,4 +1,4 @@
-# Tailwind & Laravel Mix Starter
+# Laravel Mix Starter
 
 Clone this repo and run the following commands:
 

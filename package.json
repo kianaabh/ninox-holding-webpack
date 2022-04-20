@@ -1,6 +1,6 @@
 {
-    "name": "tailwind-laravel-mix-starter",
-    "version": "2.0.0",
+    "name": "ninox-holding-webpack",
+    "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -8,20 +8,13 @@
         "development": "mix",
         "watch": "mix watch",
         "watch:laravel-mix": "mix watch",
-        "watch:tailwind": "tailwindcss -i ./resources/css/tailwind.css -o ./public/assets/css/tailwind.css --watch",
         "prod": "npm-run-all prod:laravel-mix",
         "prod:laravel-mix": "mix --production",
-        "prod:tailwind": "postcss ./resources/css/tailwind.css -o ./public/assets/css/tailwind.css",
-        "hot": "npm-run-all --parallel hot:laravel-mix watch:tailwind",
+        "hot": "npm-run-all --parallel hot:laravel-mix",
         "hot:laravel-mix": "mix watch --hot"
     },
-    "author": "Mohammad Ali Shahbazi",
     "license": "MIT",
     "devDependencies": {
-        "@tailwindcss/aspect-ratio": "^0.4.0",
-        "@tailwindcss/forms": "^0.4.0",
-        "@tailwindcss/line-clamp": "^0.3.0",
-        "@tailwindcss/typography": "^0.5.0",
         "autoprefixer": "^10.3.0",
         "bootstrap": "^5.0.2",
         "browser-sync": "^2.27.1",
@@ -30,14 +23,9 @@
         "jquery": "^3.6.0",
         "laravel-mix": "^6.0.39",
         "npm-run-all": "^4.1.5",
-        "postcss": "^8.3.5",
-        "postcss-cli": "^8.3.1",
-        "postcss-preset-env": "^6.7.0",
         "resolve-url-loader": "^4.0.0",
         "sass": "^1.35.2",
         "sass-loader": "^12.1.0",
-        "tailwindcss": "^3.0.7",
-        "tailwindcss-logical": "^3.0.0",
         "webpack": "^5.65.0",
         "webpack-cli": "^4.9.1"
     }
