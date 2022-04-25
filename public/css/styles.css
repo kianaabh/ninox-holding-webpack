@@ -15,6 +15,7 @@ body {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
+  padding-top: 80px;
 }
 
 /*!
@@ -11301,10 +11302,11 @@ textarea.form-control-lg {
 }
 .header-wrapper {
   box-shadow: 0 7px 30px rgba(0, 0, 0, 0.08);
-  position: relative;
   z-index: 100;
   background-color: #fff;
+  height: 80px;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -11344,6 +11346,83 @@ textarea.form-control-lg {
   height: 100%;
   width: 100%;
   background-color: #0f1137;
+  padding-bottom: 1rem;
+}
+.footer__wrapper {
+  display: flex;
+  color: #fff;
+}
+.footer__wrapper > * {
+  width: 33.3333333%;
+}
+.footer__about-us-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.footer__about-us-telephone {
+  color: #3159ff;
+}
+.footer__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.footer__logo {
+  width: 100px;
+}
+.footer__introduction {
+  display: flex;
+  text-align: center;
+}
+.footer__copyright {
+  color: #454990;
+}
+.footer__newsletter-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer__newsletter-inner-wrapper {
+  width: 85%;
+}
+
+.mail {
+  border: 1px solid #3159ff;
+  padding: 0.7rem;
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mail__input {
+  background-color: transparent;
+  border-color: transparent;
+  outline: 0;
+  color: #3159ff;
+}
+.mail__input::-moz-placeholder {
+  color: #3159ff;
+}
+.mail__input:-ms-input-placeholder {
+  color: #3159ff;
+}
+.mail__input::placeholder {
+  color: #3159ff;
+}
+.mail__input:focus {
+  border-color: transparent;
+}
+.mail__send-button {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3159ff;
+  border: none;
+  border-radius: 0.3rem;
 }
 
 .btn-primary {
@@ -11454,11 +11533,22 @@ textarea.form-control-lg {
   font-size: 0.9rem;
 }
 
+.footer__list-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  padding-bottom: 5rem;
+}
 .footer__lists-title {
   color: #fff;
-  text-decoration: underline;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 .footer__links {
+  list-style: none;
+  padding-left: 0;
+}
+.footer__link {
   color: #fff;
   text-decoration: none;
 }
@@ -11498,4 +11588,11 @@ textarea.form-control-lg {
 }
 .home__secondary-content span {
   font-size: 3rem;
+}
+
+.contact .container {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
 }

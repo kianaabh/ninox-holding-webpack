@@ -2,4 +2,87 @@
     height: 100%;
     width: 100%;
     background-color: #0f1137;
+    padding-bottom: 1rem;
+
+    &__wrapper {
+        display: flex;
+        color: #fff;
+
+        > * {
+            width: 33.3333333%;
+        }
+    }
+
+    &__about-us-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__about-us-telephone {
+        color: #3159ff;
+    }
+
+    &__logo-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    &__logo {
+        width: 100px;
+    }
+
+    &__introduction {
+        display: flex;
+        text-align: center;
+    }
+
+    &__copyright {
+        color: #454990;
+    }
+
+    &__newsletter-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__newsletter-inner-wrapper {
+        width: 85%;
+    }
+}
+
+.mail {
+    border: 1px solid #3159ff;
+    padding: 0.7rem;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__input {
+        background-color: transparent;
+        border-color: transparent;
+
+        outline: 0;
+        color: #3159ff;
+        &::placeholder {
+            color: #3159ff;
+        }
+        &:focus {
+            border-color: transparent;
+        }
+    }
+
+    &__send-button {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3159ff;
+        border: none;
+        border-radius: 0.3rem;
+    }
 }
