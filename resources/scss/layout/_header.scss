@@ -1,9 +1,10 @@
 .header-wrapper {
     box-shadow: 0 7px 30px rgba(0, 0, 0, 0.08);
-    position: relative;
     z-index: 100;
     background-color: #fff;
+    height: 80px;
     position: fixed;
+    top: 0;
     width: 100%;
 }
 
