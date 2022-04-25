@@ -11493,6 +11493,10 @@ textarea.form-control-lg {
   top: 3rem;
 }
 
+.simple-heading-title {
+  font-size: 1.7rem;
+}
+
 .blog {
   margin-top: 5rem;
 }
@@ -11553,6 +11557,32 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.input-wrapper .input-form {
+  border-radius: 0;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 0.8rem;
+  outline: 0;
+}
+.input-wrapper .input-form:focus {
+  border: 2px solid #3159ff;
+}
+
+.icon-info {
+  background-color: #dcdded;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.icon-info__text {
+  color: #454990;
+}
+
 .home__primary-content {
   position: relative;
   height: 100vh;
@@ -11590,9 +11620,50 @@ textarea.form-control-lg {
   font-size: 3rem;
 }
 
-.contact .container {
-  width: 100%;
-  background-color: red;
+.contact {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.contact__input-wrapper {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.contact-us__form {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem;
+}
+.contact-us__submit {
+  align-self: flex-start;
+  border-radius: 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.message-form {
+  resize: none;
+}
+
+.input-form {
+  padding: 0.5rem;
+}
+
+.contact-information-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-map-wrapper .contact-map {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

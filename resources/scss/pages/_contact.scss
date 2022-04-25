@@ -1,0 +1,52 @@
+.contact {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    &__input-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contact-us {
+    &__form {
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding: 4rem;
+    }
+
+    &__submit {
+        align-self: flex-start;
+        border-radius: 0;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+.message-form {
+    resize: none;
+}
+
+.input-form {
+    padding: 0.5rem;
+}
+
+.contact-information-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-map-wrapper {
+    .contact-map {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}

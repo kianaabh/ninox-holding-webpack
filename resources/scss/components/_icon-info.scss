@@ -1,0 +1,10 @@
+.icon-info {
+    background-color: #dcdded;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    &__text {
+        color: #454990;
+    }
+}

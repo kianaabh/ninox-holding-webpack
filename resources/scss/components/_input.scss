@@ -1,0 +1,14 @@
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    .input-form {
+        border-radius: 0;
+        border: 2px solid rgba($black, 0.1);
+        padding: 0.8rem;
+        outline: 0;
+        &:focus {
+            border: 2px solid $primary;
+        }
+    }
+}
