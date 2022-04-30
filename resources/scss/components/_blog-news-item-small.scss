@@ -1,0 +1,32 @@
+.blog-news-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.blog-news-item-small {
+    position: relative;
+    overflow: hidden;
+
+    &__picture {
+        position: absolute;
+        left: 0;
+        right: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__link {
+        position: relative;
+        background-color: rgba(#292f99, 0.4);
+        display: flex;
+        justify-content: start;
+        font-size: 1rem;
+        color: #fff;
+        padding: 1.5rem;
+        text-decoration: none;
+
+        &:hover {
+            color: currentColor;
+        }
+    }
+}

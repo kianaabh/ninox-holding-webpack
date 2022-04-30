@@ -5,7 +5,14 @@
 }
 
 .btn-outline-primary {
-    border-radius: 5px;
+    width: min-content;
+    white-space: nowrap;
+    border-radius: 0;
     cursor: pointer;
     padding: 0.4rem 2rem;
+}
+
+.btn-outline {
+    display: flex;
+    justify-content: center;
 }

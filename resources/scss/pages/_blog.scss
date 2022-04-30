@@ -1,0 +1,15 @@
+.blog-news-wrapper {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.blog-top-posts {
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    height: 500px;
+    margin-bottom: 4rem;
+}
