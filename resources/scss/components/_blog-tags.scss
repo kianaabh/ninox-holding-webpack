@@ -1,0 +1,22 @@
+.blog-single-tags {
+    display: flex;
+    gap: 3rem;
+    text-decoration: none;
+    list-style: none;
+    color: currentColor;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    &__items {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 0;
+        gap: 1rem;
+    }
+    &__link {
+        text-decoration: none;
+    }
+}
