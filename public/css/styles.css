@@ -11362,14 +11362,30 @@ textarea.form-control-lg {
   display: flex;
   color: #fff;
 }
+@media (max-width: 991.98px) {
+  .footer__wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 .footer__wrapper > * {
   width: 33.3333333%;
+}
+@media (max-width: 991.98px) {
+  .footer__wrapper > * {
+    width: 100%;
+  }
 }
 .footer__about-us-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+@media (max-width: 991.98px) {
+  .footer__about-us-wrapper {
+    order: 3;
+  }
 }
 .footer__about-us-telephone {
   color: #3159ff;
@@ -11394,8 +11410,19 @@ textarea.form-control-lg {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 991.98px) {
+  .footer__newsletter-wrapper {
+    order: 2;
+    justify-content: center;
+  }
+}
 .footer__newsletter-inner-wrapper {
   width: 85%;
+}
+@media (max-width: 991.98px) {
+  .footer__newsletter-inner-wrapper {
+    width: 100%;
+  }
 }
 
 .mail {
@@ -11529,38 +11556,17 @@ textarea.form-control-lg {
   height: 550px;
 }
 
-.post-card {
-  overflow: hidden;
-  position: relative;
-}
-.post-card:nth-child(1) {
-  grid-row: 1/span 2;
-}
-.post-card:nth-child(4) {
-  grid-row: 1/span 2;
-  grid-column: 3/4;
-}
-.post-card__img {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.post-card__text {
-  position: absolute;
-  z-index: 10;
-  bottom: 2rem;
-  padding-left: 1.5rem;
-  color: #fff;
-  font-size: 0.9rem;
-}
-
 .footer__list-wrapper {
   display: flex;
   flex-direction: row;
   gap: 5rem;
   padding-bottom: 5rem;
+}
+@media (max-width: 991.98px) {
+  .footer__list-wrapper {
+    padding-bottom: 0;
+    justify-content: center;
+  }
 }
 .footer__lists-title {
   color: #fff;
@@ -11742,6 +11748,33 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 
+.post-card {
+  overflow: hidden;
+  position: relative;
+}
+.post-card:nth-child(1) {
+  grid-row: 1/span 2;
+}
+.post-card:nth-child(4) {
+  grid-row: 1/span 2;
+  grid-column: 3/4;
+}
+.post-card__img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post-card__text {
+  position: absolute;
+  z-index: 10;
+  bottom: 2rem;
+  padding-left: 1.5rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
 .home__primary-content {
   position: relative;
   height: 100vh;
@@ -11765,11 +11798,21 @@ textarea.form-control-lg {
   top: -5rem;
   right: -5rem;
 }
+@media (max-width: 991.98px) {
+  .home__primary-picture img {
+    display: none;
+  }
+}
 .home__secondary-picture img {
   width: 40%;
   position: absolute;
   top: 0;
   left: -4rem;
+}
+@media (max-width: 991.98px) {
+  .home__secondary-picture img {
+    display: none;
+  }
 }
 .home__secondary-content {
   height: 100vh;
