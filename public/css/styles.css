@@ -11555,6 +11555,15 @@ textarea.form-control-lg {
   gap: 1rem;
   height: 550px;
 }
+@media (max-width: 991.98px) {
+  .blog-post-wrapper {
+    height: auto;
+    padding: 0;
+    margin-bottom: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+}
 
 .footer__list-wrapper {
   display: flex;
@@ -11752,12 +11761,19 @@ textarea.form-control-lg {
   overflow: hidden;
   position: relative;
 }
-.post-card:nth-child(1) {
-  grid-row: 1/span 2;
+@media (min-width: 992px) {
+  .post-card:nth-child(1) {
+    grid-row: 1/span 2;
+  }
+  .post-card:nth-child(4) {
+    grid-row: 1/span 2;
+    grid-column: 3/4;
+  }
 }
-.post-card:nth-child(4) {
-  grid-row: 1/span 2;
-  grid-column: 3/4;
+@media (max-width: 991.98px) {
+  .post-card {
+    height: 250px;
+  }
 }
 .post-card__img {
   height: 100%;

@@ -10,4 +10,11 @@
     padding: 1.5rem;
     gap: 1rem;
     height: 550px;
+    @include media-breakpoint-down(lg) {
+        height: auto;
+        padding: 0;
+        margin-bottom: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+    }
 }

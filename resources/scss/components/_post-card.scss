@@ -1,15 +1,19 @@
 .post-card {
     overflow: hidden;
     position: relative;
-    &:nth-child(1) {
-        grid-row: 1 / span 2;
-    }
+    @include media-breakpoint-up(lg) {
+        &:nth-child(1) {
+            grid-row: 1 / span 2;
+        }
 
-    &:nth-child(4) {
-        grid-row: 1 / span 2;
-        grid-column: 3 / 4;
+        &:nth-child(4) {
+            grid-row: 1 / span 2;
+            grid-column: 3 / 4;
+        }
     }
-
+    @include media-breakpoint-down(lg) {
+        height: 250px;
+    }
     &__img {
         height: 100%;
         width: 100%;
