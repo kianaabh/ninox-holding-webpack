@@ -7,9 +7,16 @@
     &__wrapper {
         display: flex;
         color: #fff;
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+            gap: 2rem;
+        }
 
         > * {
             width: 33.3333333%;
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
         }
     }
 
@@ -18,6 +25,9 @@
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        @include media-breakpoint-down(lg) {
+            order: 3;
+        }
     }
 
     &__about-us-telephone {
@@ -47,9 +57,17 @@
     &__newsletter-wrapper {
         display: flex;
         justify-content: flex-end;
+
+        @include media-breakpoint-down(lg) {
+            order: 2;
+            justify-content: center;
+        }
     }
     &__newsletter-inner-wrapper {
         width: 85%;
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+        }
     }
 }
 

@@ -4,6 +4,10 @@
         flex-direction: row;
         gap: 5rem;
         padding-bottom: 5rem;
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 0;
+            justify-content: center;
+        }
     }
 
     &__lists-title {
