@@ -1,6 +1,10 @@
 .blog-news-item {
     display: flex;
     gap: 2rem;
+
+    @include media-breakpoint-down(lg) {
+        flex-direction: column;
+    }
     &__picture {
         justify-content: flex-start;
         height: 12rem;
