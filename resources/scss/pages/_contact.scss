@@ -16,6 +16,9 @@
         justify-content: center;
         gap: 2rem;
         padding: 4rem;
+        @include media-breakpoint-down(lg) {
+            padding: 1rem;
+        }
     }
 
     &__submit {
