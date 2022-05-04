@@ -11624,6 +11624,11 @@ textarea.form-control-lg {
   display: flex;
   gap: 2rem;
 }
+@media (max-width: 991.98px) {
+  .blog-news-item {
+    flex-direction: column;
+  }
+}
 .blog-news-item__picture {
   justify-content: flex-start;
   height: 12rem;
@@ -11855,6 +11860,11 @@ textarea.form-control-lg {
   gap: 2rem;
   padding: 4rem;
 }
+@media (max-width: 991.98px) {
+  .contact-us__form {
+    padding: 1rem;
+  }
+}
 .contact-us__submit {
   align-self: flex-start;
   border-radius: 0;
@@ -11900,6 +11910,12 @@ textarea.form-control-lg {
   gap: 1rem;
   height: 500px;
   margin-bottom: 4rem;
+}
+@media (max-width: 991.98px) {
+  .blog-top-posts {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .blog-single__heading-pic-wrapper {
